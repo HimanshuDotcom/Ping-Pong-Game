@@ -13,11 +13,12 @@ html {
 }
 
 .container {
-    border: 3px solid black;
+    /* border: 3px solid black; */
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .rod {
@@ -28,9 +29,20 @@ html {
     border-radius: 25px;
     padding: 5px;
     color: white;
-    position: relative;
+    position: relative;  /* without this rod will not move */
 }
 
 #rod2 {
     background-color: orange;
+}
+
+.ball {
+    background-color: rgb(47, 44, 78);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    /* bottom: 3rem; */
+    top: 3rem;
+    left: calc(50% - 15px);
+    border-radius: 50%;
 }
